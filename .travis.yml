@@ -4,3 +4,11 @@ node_js:
 cache:
   directories:
     - "node_modules"
+deploy:
+  provider: npm
+  email: willem@avantgardeweb.co.uk
+  api_key: $NPM_TOKEN
+  on:
+    branch: master
+  skip_cleanup: true
+  tag: next

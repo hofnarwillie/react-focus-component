@@ -1,4 +1,9 @@
 # react-focus-component
+
+**NOTE! This is not ready. It is a skeleton repo only. Code will be published soon...**
+
+[![Build Status](https://travis-ci.org/hofnarwillie/react-focus-component.svg?branch=master)](https://travis-ci.org/hofnarwillie/react-focus-component)
+
 A react higher order component that brings other components into visual focus/highlight by placing an overlay over all other elements on the page
 
 Example: [TODO: Codepen URL]
