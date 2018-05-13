@@ -9,3 +9,8 @@
 npm-debug.log
 lib
 .npmrc
+example/
+.gitignore
+.nvmrc
+.travis.yml
+webpack.config.js
