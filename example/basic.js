@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { FocusBlock, FocusOverlay } from '../src';
+import { FocusOverlay } from '../src';
 
 class BasicExample extends React.Component {
     constructor(props) {

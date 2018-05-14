@@ -1,6 +1,6 @@
 {
     "name": "react-focus-component",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A react higher order component that brings other components into visual focus/highlight by placing an overlay over all other elements on the page",
     "main": "index.js",
     "scripts": {
