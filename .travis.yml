@@ -12,3 +12,5 @@ deploy:
     branch: master
   skip_cleanup: true
   tag: latest
+after_deploy:
+  - npm run deploy

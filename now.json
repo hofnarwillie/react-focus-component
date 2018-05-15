@@ -1,0 +1,11 @@
+{
+    "name": "react-focus-element",
+    "files": [
+        "example",
+        "src",
+        ".babelrc",
+        "package.json",
+        "package-lock.json",
+        "webpack.config.js"
+    ]
+}
