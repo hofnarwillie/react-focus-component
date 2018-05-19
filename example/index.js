@@ -3,16 +3,46 @@ import ReactDOM from 'react-dom';
 import BasicExample from './basic';
 import Transition from './transition';
 
+const styles = {
+    main: {
+        border: '1px solid #eee',
+        margin: '10% 15%',
+        padding: '2em',
+        boxShadow: '1px 1px 5px #333',
+        fontFamily: 'monospace'
+    },
+    footer: {
+        textAlign: 'center',
+        marginTop: '4em',
+        fontStyle: 'italic'
+    }
+};
+
 ReactDOM.render(
-    <div>
-        <h1>react-focus-component (https://www.npmjs.com/package/react-focus-component)</h1>
+    <div style={styles.main}>
+        <h1>Examples for react-focus-component</h1>
+
+        <p>More details on <a href="https://www.npmjs.com/package/react-focus-component">https://www.npmjs.com/package/react-focus-component</a></p>
 
         <p>A react component that brings other components into visual focus/highlight by placing an overlay over all other elements on the page.</p>
 
-        <h2>Basic Example</h2>
+        <hr />
+
+        <h2>Example 1: Basic usage</h2>
         <BasicExample />
-        <h2>Transition between 2 focus points</h2>
+
+        <hr />
+
+        <h2>Example 2: Transition between 2 focus points</h2>
         <Transition />
+
+        <hr />
+
+        <p style={styles.footer}>
+            Developed by<br/>
+            Willem Le Roux a.k.a <a href="https://github.com/hofnarwillie">hofnarwillie</a><br /><br />
+            <img src="https://avatars1.githubusercontent.com/u/8123799?s=100&v=4" /> 
+        </p>
     </div>,
     document.getElementById('root')
 );
