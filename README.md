@@ -4,7 +4,7 @@
 
 A react component that brings other components into visual focus/highlight by placing an overlay over all other elements on the page. **Requires React 16 or higher**
 
-Example: [](https://react-focus-component.now.sh/)
+Example: [https://react-focus-component.now.sh/](https://react-focus-component.now.sh/)
 
 ## Usage
 
