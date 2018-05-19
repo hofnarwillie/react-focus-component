@@ -29,7 +29,7 @@ class BasicExample extends React.Component {
                     <p>THEN I want this component to be visibly brought to the user's attention</p>
                 </div>
 
-                <p>GIVEN I click <em>this</em> <button type="button" onClick={() => this.setActiveHighlight(this.component2)}>button</button></p>
+                <p>WHEN I click <em>this</em> <button type="button" onClick={() => this.setActiveHighlight(this.component2)}>button</button></p>
                 <div ref={this.component2}>
                     <p>THEN <em>this</em> component should be highlighted.</p>
                 </div>

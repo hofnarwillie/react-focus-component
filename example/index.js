@@ -22,7 +22,7 @@ ReactDOM.render(
     <div style={styles.main}>
         <h1>Examples for react-focus-component</h1>
 
-        <p>More details on <a href="https://www.npmjs.com/package/react-focus-component">https://www.npmjs.com/package/react-focus-component</a></p>
+        <p>More details on <a href="https://www.npmjs.com/package/react-focus-component">https://www.npmjs.com/package/react-focus-component</a>. Please contribute <a href="https://github.com/hofnarwillie/react-focus-component">on github</a>.</p>
 
         <p>A react component that brings other components into visual focus/highlight by placing an overlay over all other elements on the page.</p>
 
@@ -41,7 +41,7 @@ ReactDOM.render(
         <p style={styles.footer}>
             Developed by<br/>
             Willem Le Roux a.k.a <a href="https://github.com/hofnarwillie">hofnarwillie</a><br /><br />
-            <img src="https://avatars1.githubusercontent.com/u/8123799?s=100&v=4" /> 
+            <img src="https://avatars1.githubusercontent.com/u/8123799?s=100&v=4" />
         </p>
     </div>,
     document.getElementById('root')
