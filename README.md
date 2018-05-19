@@ -9,7 +9,9 @@ Example: [https://react-focus-component.now.sh/](https://react-focus-component.n
 ## Usage
 
 ```
+
 import { FocusOverlay } from 'react-focus-component';
+
 class BasicExample extends React.Component {
     constructor(props) {
         super(props);
@@ -28,6 +30,7 @@ class BasicExample extends React.Component {
         );
     }
 }
+
 ```
 
 ## Development
