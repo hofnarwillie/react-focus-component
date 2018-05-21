@@ -2,7 +2,6 @@ import React from 'react';
 
 import { shallow, mount } from 'enzyme';
 import { assert } from 'chai';
-import sinon from 'sinon';
 
 import { FocusOverlay } from '../index';
 import { getOverlayStyles } from '../FocusOverlay';
@@ -18,6 +17,12 @@ describe('FocusOverlay', () => {
         const wrapper = mount(<FocusOverlay />);
         const overlay = wrapper.find('[data-selector="focus-overlay"]').get(0);
         assert(overlay.props.style.visibility === 'hidden');
+    });
+
+    it('passes children to the correct position', () => {
+        const wrapper = mount(<FocusOverlay target="bottomright"><span>test</span></FocusOverlay>);
+        const overlayBlock = wrapper.find('[data-selector="focus-overlay"]').childAt(7);
+        assert(overlayBlock.contains(<span>test</span>));
     });
 
 });

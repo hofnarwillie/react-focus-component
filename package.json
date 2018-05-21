@@ -1,6 +1,6 @@
 {
     "name": "react-focus-component",
-    "version": "1.0.6",
+    "version": "1.1.0",
     "description": "A react component that brings other components into visual focus/highlight by placing an overlay over all other elements on the page",
     "main": "index.js",
     "scripts": {
@@ -40,6 +40,7 @@
         "nodemon": "^1.9.1",
         "now": "^11.1.7",
         "now-pipeline": "^1.10.0",
+        "prop-types": "^15.6.1",
         "react": "^16.3.2",
         "react-dom": "^16.3.2",
         "sinon": "^1.17.3",

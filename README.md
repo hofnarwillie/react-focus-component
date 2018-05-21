@@ -33,6 +33,12 @@ class BasicExample extends React.Component {
 
 ```
 
+## API
+
+* `focusComponent` - A react ref instance or an array of react refs to calculate the outer boundries of the focus point.
+* `onExit` - called when the user clicks on the overlay.
+* `target` - Determines where the children (if any) will be rendered. Possible values: `topleft`, `top`, `topright`, `left`, `right`, `bottomleft`, `bottom` (DEFAULT), `bottomright`.
+
 ## Development
 
 * **Dependencies:** Node 8 or greater.

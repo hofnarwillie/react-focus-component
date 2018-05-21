@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import BasicExample from './basic';
 import Transition from './transition';
+import ChildrenExample from './children';
+import Multiple from './multiple';
 
 const styles = {
     main: {
@@ -35,6 +37,16 @@ ReactDOM.render(
 
         <h2>Example 2: Transition between 2 focus points</h2>
         <Transition />
+
+        <hr />
+
+        <h2>Example 3: Layering children above the overlay</h2>
+        <ChildrenExample />
+
+        <hr />
+
+        <h2>Example 4: Spanning the highlight over multiple refs</h2>
+        <Multiple />
 
         <hr />
 

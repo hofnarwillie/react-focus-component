@@ -11,7 +11,7 @@
     "rules": {
         "no-bitwise": 2,
         "no-else-return": 2,
-        "no-eq-null": 2,
+        "no-eq-null": 0,
         "no-extra-parens": 0,
         "no-floating-decimal": 2,
         "no-inner-declarations": [2, "both"],
