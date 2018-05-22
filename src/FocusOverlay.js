@@ -87,14 +87,12 @@ class FocusOverlay extends React.Component {
     }
 
     onScroll() {
-        console.log('onScroll() start');
         this.setState({ animate: false });
         this.tryMove(this.props.focusComponent);
         if (this.timeoutReference) {
             clearTimeout(this.timeoutReference);
         }
         this.timeoutReference = setTimeout(() => {
-            console.log('onScroll() reset animate');
             this.setState({ animate: true });
         }, 70);
     }
@@ -156,7 +154,6 @@ class FocusOverlay extends React.Component {
         this.tryMove(focusComponent);
 
         const { x, y, width, height, opacity, visibility, animate } = this.state;
-        console.log('render() getStyles');
         styles = getOverlayStyles(x, y, width, height, animate);
 
         const containerStyle = {
