@@ -25,7 +25,7 @@ class BasicExample extends React.Component {
                     This element will be highlighted because the "ref" is passed to the FocusOverlay as the focusComponent prop.
                 </div>
 
-                <FocusOverlay focusComponent={this.component} onExit={() => alert('runs when the user clicks in the overlay')} />
+                <FocusOverlay focusComponent={this.component.current} onExit={() => alert('runs when the user clicks in the overlay')} />
             </div>
         );
     }
@@ -35,7 +35,7 @@ class BasicExample extends React.Component {
 
 ## API
 
-* `focusComponent` - A react ref instance or an array of react refs to calculate the outer boundries of the focus point.
+* `focusComponent` - A DOM element instance or an array of DOM elements to calculate the outer boundries of the focus point.
 * `onExit` - called when the user clicks on the overlay.
 * `target` - Determines where the children (if any) will be rendered. Possible values: `topleft`, `top`, `topright`, `left`, `right`, `bottomleft`, `bottom` (DEFAULT), `bottomright`.
 

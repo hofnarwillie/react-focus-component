@@ -23,12 +23,12 @@ class BasicExample extends React.Component {
         return (
             <div>
                 <p>GIVEN I <strong>want to highlight 2 individual important components</strong>,</p>
-                <p>WHEN I click this <button type="button" onClick={() => this.setActiveHighlight(this.component1)}>button</button></p>
+                <p>WHEN I click this <button type="button" onClick={() => this.setActiveHighlight(this.component1.current)}>button</button></p>
                 <div ref={this.component1}>
                     <p>THEN I want this component to be visibly brought to the user's attention</p>
                 </div>
 
-                <p>WHEN I click <em>this</em> <button type="button" onClick={() => this.setActiveHighlight(this.component2)}>button</button></p>
+                <p>WHEN I click <em>this</em> <button type="button" onClick={() => this.setActiveHighlight(this.component2.current)}>button</button></p>
                 <div ref={this.component2}>
                     <p>THEN <em>this</em> component should be highlighted.</p>
                 </div>

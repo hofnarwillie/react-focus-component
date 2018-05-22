@@ -16,7 +16,7 @@ class Multiple extends React.Component {
 
     setActiveHighlight() {
         this.setState({
-            focusComponent: [this.component1, this.component2]
+            focusComponent: [this.component1.current, this.component2.current]
         });
     }
 

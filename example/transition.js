@@ -23,15 +23,15 @@ class Transition extends React.Component {
         return (
             <div>
                 <p>GIVEN I <strong>want to transition between 2 highlighted components</strong>,</p>
-                <p>WHEN I click this <button type="button" onClick={() => this.setActiveHighlight(this.component1)}>button</button></p>
+                <p>WHEN I click this <button type="button" onClick={() => this.setActiveHighlight(this.component1.current)}>button</button></p>
                 <div ref={this.component1}>
                     <p>THEN I want this component to be visibly brought to the user's attention</p>
-                    <p>WHEN I click <em>this</em> <button type="button" onClick={() => this.setActiveHighlight(this.component2)}>button</button></p>
+                    <p>WHEN I click <em>this</em> <button type="button" onClick={() => this.setActiveHighlight(this.component2.current)}>button</button></p>
                 </div>
 
                 <div ref={this.component2}>
                     <p>THEN <em>this</em> component should be highlighted.</p>
-                    <p>WHEN I click <em>this</em> <button type="button" onClick={() => this.setActiveHighlight(this.component1)}>button</button></p>
+                    <p>WHEN I click <em>this</em> <button type="button" onClick={() => this.setActiveHighlight(this.component1.current)}>button</button></p>
                 </div>
 
                 <FocusOverlay focusComponent={this.state.focusComponent} onExit={() => this.setActiveHighlight(null)} />

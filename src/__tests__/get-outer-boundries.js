@@ -30,9 +30,7 @@ describe('get-outer-boundries.js', () => {
                 y: 20
             };
             const result = getOuterBoundries({
-                current: {
-                    getBoundingClientRect: () => boundries
-                }
+                getBoundingClientRect: () => boundries
             });
             assert.deepEqual(result, boundries);
         });
@@ -54,14 +52,10 @@ describe('get-outer-boundries.js', () => {
             };
             const result = getOuterBoundries([
                 {
-                    current: {
-                        getBoundingClientRect: () => boundries1
-                    }
+                    getBoundingClientRect: () => boundries1
                 },
                 {
-                    current: {
-                        getBoundingClientRect: () => boundries2
-                    }
+                    getBoundingClientRect: () => boundries2
                 }
             ]);
             assert.deepEqual(result, {

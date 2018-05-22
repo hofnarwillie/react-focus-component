@@ -35,7 +35,7 @@ export default focusComponent => {
     if (isArray(focusComponent)) {
         let highestCommonDenominator;
         focusComponent.map(component => {
-            highestCommonDenominator = getHighestCommonDenominator(component.current.getBoundingClientRect(), highestCommonDenominator);
+            highestCommonDenominator = getHighestCommonDenominator(component.getBoundingClientRect(), highestCommonDenominator);
         });
         return {
             width: highestCommonDenominator.x2 - highestCommonDenominator.x1,
@@ -44,5 +44,5 @@ export default focusComponent => {
             y: highestCommonDenominator.y1
         };
     }
-    return focusComponent.current.getBoundingClientRect();
+    return focusComponent.getBoundingClientRect();
 };

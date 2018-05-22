@@ -26,7 +26,7 @@ class ChildrenExample extends React.Component {
         return (
             <div>
                 <p>GIVEN I <strong>want to render something on top of the Overlay</strong>,</p>
-                <p>WHEN I click this <button type="button" onClick={() => this.setActiveHighlight(this.component)}>button</button></p>
+                <p>WHEN I click this <button type="button" onClick={() => this.setActiveHighlight(this.component.current)}>button</button></p>
                 <div ref={this.component}>
                     <p>THEN I want this component to be visibly brought to the user's attention</p>
                 </div>
