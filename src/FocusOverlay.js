@@ -179,15 +179,9 @@ class FocusOverlay extends React.Component {
     }
 };
 
-const componentRefShape = PropTypes.shape({
-    getBoundingClientRect: PropTypes.func.isRequired
-});
 FocusOverlay.propTypes = {
     target: PropTypes.oneOf(['topleft', 'top', 'topright', 'left', 'right', 'bottomleft', 'bottom', 'bottomright']),
-    focusComponent: PropTypes.oneOf([
-        componentRefShape,
-        PropTypes.arrayOf(componentRefShape)
-    ]),
+    focusComponent: PropTypes.any,
     onExit: PropTypes.func,
     children: PropTypes.node
 };
