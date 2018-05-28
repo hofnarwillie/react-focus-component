@@ -20,6 +20,18 @@ export const getHighestCommonDenominator = (component, current) => {
     };
 };
 
+export const getBoundriesFromFocusComponent = focusComponent => {
+    if (typeof focusComponent.getBoundingClientRect === 'function') {
+        return focusComponent.getBoundingClientRect();
+    }
+    return {
+        x: focusComponent.x,
+        y: focusComponent.y,
+        width: focusComponent.width,
+        height: focusComponent.height
+    };
+};
+
 export default focusComponent => {
     let result = null;
 
@@ -35,7 +47,7 @@ export default focusComponent => {
     if (isArray(focusComponent)) {
         let highestCommonDenominator;
         focusComponent.map(component => {
-            highestCommonDenominator = getHighestCommonDenominator(component.getBoundingClientRect(), highestCommonDenominator);
+            highestCommonDenominator = getHighestCommonDenominator(getBoundriesFromFocusComponent(component), highestCommonDenominator);
         });
         return {
             width: highestCommonDenominator.x2 - highestCommonDenominator.x1,
@@ -44,5 +56,5 @@ export default focusComponent => {
             y: highestCommonDenominator.y1
         };
     }
-    return focusComponent.getBoundingClientRect();
+    return getBoundriesFromFocusComponent(focusComponent);
 };

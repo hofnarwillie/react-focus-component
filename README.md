@@ -35,7 +35,7 @@ class BasicExample extends React.Component {
 
 ## API
 
-* `focusComponent` - A DOM element instance or an array of DOM elements to calculate the outer boundries of the focus point.
+* `focusComponent` - A DOM element instance or an array of DOM elements to calculate the outer boundries of the focus point. This can also be a custom set of coordinates (`{ height, width, x, y }`), but **note** that these coordinates are reletive to the scroll position and will not automatically update on page scroll. This should be managed outside of the component. 
 * `onExit` - called when the user clicks on the overlay.
 * `target` - Determines where the children (if any) will be rendered. Possible values: `topleft`, `top`, `topright`, `left`, `right`, `bottomleft`, `bottom` (DEFAULT), `bottomright`.
 

@@ -4,6 +4,7 @@ import BasicExample from './basic';
 import Transition from './transition';
 import ChildrenExample from './children';
 import Multiple from './multiple';
+import CustomExample from './custom';
 
 const styles = {
     main: {
@@ -47,6 +48,11 @@ ReactDOM.render(
 
         <h2>Example 4: Spanning the highlight over multiple refs</h2>
         <Multiple />
+
+        <hr />
+
+        <h2>Example 5: Customise the focus coordinates</h2>
+        <CustomExample />
 
         <hr />
 
